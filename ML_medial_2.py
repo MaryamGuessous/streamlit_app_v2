@@ -65,7 +65,7 @@ warnings.filterwarnings("ignore")
 inputFileName = "donnees_synthese_1706.xlsx"
 data = pd.read_excel(inputFileName)
 
-inputFileName_2 = "donnees_synthese_2_1606.xlsx"
+inputFileName_2 = "donnees_synthese_2_1706.xlsx"
 data_2 = pd.read_excel(inputFileName_2)
 
 data= pd.get_dummies(data, columns=['Sexe'])
