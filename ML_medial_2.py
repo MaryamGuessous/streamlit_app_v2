@@ -62,7 +62,7 @@ import pickle
 warnings.filterwarnings("ignore")
 
 
-inputFileName = "donnees_synthese_1606.xlsx"
+inputFileName = "donnees_synthese_1706.xlsx"
 data = pd.read_excel(inputFileName)
 
 inputFileName_2 = "donnees_synthese_2_1606.xlsx"
@@ -93,8 +93,8 @@ Y_A = data[['Actitest']]
 #Let's divide the datased into training and testing sets
 import random
 random.seed(0)
-X_train_F, X_test_F, y_train_F, y_test_F = train_test_split(X, Y_F, test_size=0.3, random_state=78)
-X_train_A, X_test_A,  y_train_A, y_test_A = train_test_split(X, Y_A, test_size=0.3, random_state=78)
+X_train_F, X_test_F, y_train_F, y_test_F = train_test_split(X, Y_F, test_size=0.3, random_state=10)
+X_train_A, X_test_A,  y_train_A, y_test_A = train_test_split(X, Y_A, test_size=0.3, random_state=43)
 
 from sklearn.metrics import r2_score
 
